@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Consulta</h1>
+      <form action="/datos" method=post>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Dato a Consultar</label>
+          <input type="text" class="form-control" name="valor" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Filtrar dato por</label>
+          <select class="form-control" name="clave">
+            <option value="uid">UID</option>
+            <option value="anno_cargue_secop">Anno Cargue SECOP</option>
+            <option value="anno_firma_del_contrato">Anno Firma del Contrato</option>
+            <option value="nivel_entidad">Nivel Entidad</option>
+            <option value="orden_entidad">Orden Entidad</option>
+            <option value="nombre_de_la_entidad">Nombre de la Entidad</option>
+            <option value="nit_de_la_entidad">NIT de la Entidad</option>
+            <option value="c_digo_de_la_entidad">Código de la Entidad</option>
+            <option value="id_tipo_de_proceso">ID Tipo de Proceso</option>
+            <option value="tipo_de_proceso">Tipo de Proceso</option>
+            <option value="estado_del_proceso">Estado del Proceso</option>
+            <option value="causal_de_otras_formas_de_contratacion_directa">Causal de Otras Formas de Contratacion Directa</option>
+            <option value="id_regimen_de_contratacion">ID Regimen de Contratacion</option>
+            <option value="regimen_de_contratacion">Regimen de Contratacion</option>
+            <option value="id_objeto_a_contratar">ID Objeto a Contratar</option>
+            <option value="objeto_a_contratar">Objeto a Contratar</option>
+            <option value="detalle_del_objeto_a_contratar">Detalle del Objeto a Contratar</option>
+            <option value="tipo_de_contrato">Tipo de Contrato</option>
+            <option value="municipio_obtencion">Municipio Obtencion</option>
+            <option value="municipio_entrega">Municipio Entrega</option>
+            <option value="municipios_ejecucion">Municipios Ejecucion</option>
+            <option value="fecha_de_cargue_en_el_secop">Fecha de Cargue en el SECOP</option>
+            <option value="numero_de_constancia">Numero de Constancia</option>
+            <option value="numero_de_proceso">Numero de Proceso</option>
+            <option value="numero_del_contrato">Numero del Contrato</option>
+            <option value="cuantia_proceso">Cuantia Proceso</option>
+            <option value="id_grupo">ID Grupo</option>
+            <option value="nombre_grupo">Nombre Grupo</option>
+            <option value="id_familia">ID Familia</option>
+            <option value="nombre_familia">Nombre Familia</option>
+            <option value="id_clase">ID Clase</option>
+            <option value="nombre_clase">Nombre Clase</option>
+            <option value="id_ajudicacion">ID Ajudicacion</option>
+            <option value="tipo_identifi_del_contratista">Tipo Identifi del Contratista</option>
+            <option selected="selected" value="identificacion_del_contratista">Identificacion del Contratista</option>
+            <option value="nom_raz_social_contratista">Nom Raz Social Contratista</option>
+            <option value="dpto_y_muni_contratista">Dpto y Muni Contratista</option>
+            <option value="tipo_doc_representante_legal">Tipo Doc Representante Legal</option>
+            <option value="identific_del_represen_legal">Identific del Represen Legal</option>
+            <option value="nombre_del_represen_legal">Nombre del Represen Legal</option>
+            <option value="fecha_de_firma_del_contrato">Fecha de Firma del Contrato</option>
+            <option value="fecha_ini_ejec_contrato">Fecha Ini Ejec Contrato</option>
+            <option value="plazo_de_ejec_del_contrato">Plazo de Ejec del Contrato</option>
+            <option value="rango_de_ejec_del_contrato">Rango de Ejec del Contrato</option>
+            <option value="tiempo_adiciones_en_dias">Tiempo Adiciones en Dias</option>
+            <option value="tiempo_adiciones_en_meses">Tiempo Adiciones en Meses</option>
+            <option value="fecha_fin_ejec_contrato">Fecha Fin Ejec Contrato</option>
+            <option value="compromiso_presupuestal">Compromiso Presupuestal</option>
+            <option value="cuantia_contrato">Cuantia Contrato</option>
+            <option value="valor_total_de_adiciones">Valor Total de Adiciones</option>
+            <option value="valor_contrato_con_adiciones">Valor Contrato con Adiciones</option>
+            <option value="objeto_del_contrato_a_la_firma">Objeto del Contrato a la Firma</option>
+            <option value="id_origen_de_los_recursos">ID Origen de los Recursos</option>
+            <option value="origen_de_los_recursos">Origen de los Recursos</option>
+            <option value="codigo_bpin">Codigo BPIN</option>
+            <option value="proponentes_seleccionados">Proponentes Seleccionados</option>
+            <option value="calificacion_definitiva">Calificacion Definitiva</option>
+            <option value="id_sub_unidad_ejecutora">ID Sub Unidad Ejecutora</option>
+            <option value="nombre_sub_unidad_ejecutora">Nombre Sub Unidad Ejecutora</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-info">Info</button>
+      </form>
+  </body>
+</html>
